@@ -1,0 +1,22 @@
+.Explore-container{
+    height: 100vh;
+    width: 100%;
+}
+.Explore-Heading{
+    width: 100%;
+    height: 80px;
+    /* background-color: aqua; */
+    text-align: center;
+    padding-top: 20px;
+   
+}
+.Explore-text{
+
+    color: #FFF;
+font-size: 56px;
+font-weight: 600;
+
+}
+.gallery{
+    margin-top: 5rem;
+}

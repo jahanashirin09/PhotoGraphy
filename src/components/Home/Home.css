@@ -1,0 +1,30 @@
+.home-body-container {
+  width: 100%;
+  background: url("/Homeimage/home_image.png") lightgray 50% / cover no-repeat;
+  height: calc(100vh - 84px);
+  position: relative
+}
+.home-body-text-container {
+  width: 100%;
+  height: 370px;
+  background: linear-gradient(0deg, #080808 -33.61%, rgba(8, 8, 8, 0) 112.13%);
+  position: absolute;
+  bottom: 0;
+}
+.body-main-text {
+  width: 64%;
+  color: #fff;
+  font-family: "General Sans";
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 96px;
+  text-transform: capitalize;
+  margin: 3rem 0rem 0rem 8rem;
+}
+.body-subtext {
+  width: 64%;
+  color: rgba(187, 187, 187, 0.84);
+  font-family: "Gabarito", sans-serif;
+  font-size: 20px;
+  margin: 1.2rem 0rem 0rem 8rem;
+}

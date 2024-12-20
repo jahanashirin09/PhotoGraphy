@@ -1,0 +1,26 @@
+.head-container {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.Logo-image {
+  width: 4.3rem;
+  height: 50px;
+  margin-left: 8rem;
+}
+.nav-container {
+  display: flex;
+  gap: 2.2rem;
+}
+.nav-text {
+  color: #cbc6c6;
+  font-family: "Gabarito", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.toggle-btn {
+  margin: 0rem 8rem 1rem 0rem;
+}

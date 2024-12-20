@@ -1,13 +1,17 @@
-import './App.css'
+import "./App.css";
+import About from "./components/About";
+import Explore from "./components/Explore/Explore";
+import Home from "./components/Home/Home";
+import Myworks from "./components/MyWork/Myworks";
 
 function App() {
-
-
   return (
     <>
-     <h1>welcome to Photog Grpahic website</h1>
+      <Home />
+      <About />
+      <Myworks />
+      <Explore/>
     </>
-  )
+  );
 }
-
-export default App
+export default App;
