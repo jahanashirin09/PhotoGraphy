@@ -3,7 +3,7 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <>
+    <div id="main-container">
       <Header />
       <div className="home-body-container">
         <div className="home-body-text-container">
@@ -14,7 +14,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

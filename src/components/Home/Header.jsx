@@ -6,10 +6,18 @@ const Header = () => {
     <div className="head-container">
       <img src={Logo} className="Logo-image" alt="logo" />
       <div className="nav-container">
-        <p className="nav-text">HOME</p>
-        <p className="nav-text">ABOUT</p>
-        <p className="nav-text">PORTFOLIO</p>
-        <p className="nav-text">CONTACT</p>
+        <a href="#main-container" className="nav-text">
+          HOME
+        </a>
+        <a href="#About-main-container" className="nav-text">
+          ABOUT
+        </a>
+        <a href="#Myworks-contanier" className="nav-text">
+          PORTFOLIO
+        </a>
+        <a href="#connect-main-container" className="nav-text">
+          CONTACT
+        </a>
       </div>
       <div className="toggle-btn">
         <DarkMode />

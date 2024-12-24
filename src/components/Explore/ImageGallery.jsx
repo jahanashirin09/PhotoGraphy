@@ -1,82 +1,90 @@
-import Gallleryimage1 from '/Galleryimage/Gallery_1.jpg'
-import Gallleryimage2 from '/Galleryimage/Gallery_2.jpg'
-import Gallleryimage3 from "/Galleryimage/Gallery_3.jpg"
-import Gallleryimage4 from "/Galleryimage/Gallery_4.jpg"
-import Gallleryimage5 from "/Galleryimage/Gallery_5.jpg"
-import Gallleryimage6 from "/Galleryimage/Gallery_6.jpg"
-import Gallleryimage7 from '/Galleryimage/Gallery_7.jpg'
-import Gallleryimage8 from "/Galleryimage/Gallery_8.jpg"
-import Gallleryimage9 from '/Galleryimage/Gallery_9.jpg'
-import Gallleryimage10 from "/Galleryimage/Gallery_10.jpg";
-import Gallleryimage11 from "/Galleryimage/Gallery_11.jpg";
-import Gallleryimage12 from "/Galleryimage/Gallery_12.jpg";
-import "./ImageGallery.css"
+import GallleryData from "./GallleryData";
+import "./ImageGallery.css";
+import { useEffect, useState } from "react";
 
 const ImageGallery = () => {
-    let GallleryData = [
-      {
-        id: 1,
-        imgeSrc: Gallleryimage1,
-      },
-      {
-        id: 2,
-        imgeSrc: Gallleryimage2,
-      },
-      {
-        id: 3,
-        imgeSrc: Gallleryimage3,
-      },
-      {
-        id: 4,
-        imgeSrc: Gallleryimage4,
-      },
-      {
-        id: 5,
-        imgeSrc: Gallleryimage5,
-      },
-      {
-        id: 6,
-        imgeSrc: Gallleryimage6,
-      },
-      {
-        id: 7,
-        imgeSrc: Gallleryimage7,
-      },
-      {
-        id: 8,
-        imgeSrc: Gallleryimage8,
-      },
-      {
-        id: 9,
-        imgeSrc: Gallleryimage9,
-      },
-      {
-        id: 10,
-        imgeSrc: Gallleryimage10,
-      },
-      {
-        id: 11,
-        imgeSrc: Gallleryimage11,
-        },
-      {
-        id: 12,
-        imgeSrc: Gallleryimage12,
-      }
+  const [tag, setTag] = useState("all");
+  const [filteredImage, setFilteredImages] = useState([]);
+  const [activeTag, setActiveTag] = useState("all");
+  const [noOfElement, setNoOfElement] = useState(12);
+  const Slice = filteredImage.slice(0, noOfElement);
+  const handleTagClick = (selectedTag) => {
+    setTag(selectedTag);
+    setActiveTag(selectedTag);
+  };
+  const loadMore = () => {
+    setNoOfElement(noOfElement + noOfElement);
+  };
+  useEffect(() => {
+    tag === "all"
+      ? setFilteredImages(GallleryData)
+      : setFilteredImages(GallleryData.filter((data) => data.tag === tag));
+  }, [tag]);
+  return (
+    <>
+      <div className="filter-components">
+        <button
+          className={activeTag === "all" ? "tagactive" : "tag"}
+          onClick={() => handleTagClick("all")}
+        >
+          ALL
+        </button>
+        <button
+          className={activeTag === "lifeStyle" ? "tagactive" : "tag"}
+          onClick={() => handleTagClick("lifeStyle")}
+        >
+          LIFESTYLE
+        </button>
+        <button
+          className={activeTag === "nature" ? "tagactive" : "tag"}
+          onClick={() => handleTagClick("nature")}
+        >
+          NATURE
+        </button>
+        <button
+          className={activeTag === "food" ? "tagactive" : "tag"}
+          onClick={() => handleTagClick("food")}
+        >
+          FOOD
+        </button>
+        <button
+          className={activeTag === "sports" ? "tagactive" : "tag"}
+          onClick={() => handleTagClick("sports")}
+        >
+          SPORTS
+        </button>
+        <button
+          className={activeTag === "portrait" ? "tagactive" : "tag"}
+          onClick={() => handleTagClick("portrait")}
+        >
+          PORTRAIT
+        </button>
+      </div>
+      <div className="gallery-images">
+        {Slice.map((item, index) => {
+          return (
+            <div className="pics" key={index}>
+              <img
+                src={item.imgeSrc}
+                style={{
+                  width: "100%",
+                  marginLeft: "10px",
+                  marginTop: "10px",
+                }}
+              />
+            </div>
+          );
+        })}
+      </div>
 
-    ];
+      <div className="more-option">
+        <div className="blur"></div>
+        <button className="loadMorebtn" onClick={() => loadMore()}>
+          Load More
+        </button>
+      </div>
+    </>
+  );
+};
 
-    return (
-      <>
-            <div className="gallery-images">{GallleryData.map((item, index) => {
-            
-                return (
-                    <div className='pics' key={index}>
-                        <img src={item.imgeSrc} style={{width:'100%',marginLeft: '10px', marginTop: '10px'}}/>
-                        </div>
-            )
-        })}</div>
-      </>
-    );
-}
-
-export default ImageGallery
+export default ImageGallery;

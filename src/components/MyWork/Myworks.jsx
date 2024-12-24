@@ -26,7 +26,7 @@ const Myworks = () => {
   
  };
   return (
-    <div className="Myworks-contanier">
+    <div id="Myworks-contanier">
       <div className="Myworks-header">My Works</div>
       <div className="Myworks-images">
         <div

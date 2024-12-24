@@ -1,22 +1,30 @@
-.Explore-container{
-    height: 100vh;
-    width: 100%;
+.Explore-container {
+  /* height: 100vh; */
+  height: fit-content;
+  width: 100%;
+  position: relative;
+  /* background-color: blue; */
 }
-.Explore-Heading{
-    width: 100%;
-    height: 80px;
-    /* background-color: aqua; */
-    text-align: center;
-    padding-top: 20px;
-   
+.Explore-Heading {
+  width: 100%;
+  height: 80px;
+  /* background-color: aqua; */
+  text-align: center;
+  padding-top: 20px;
 }
-.Explore-text{
-
-    color: #FFF;
-font-size: 56px;
-font-weight: 600;
-
+.Explore-text {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 600;
 }
-.gallery{
-    margin-top: 5rem;
+.gallery {
+  margin-top: 1rem;
+  position: relative;
+}
+.blur{
+    width:100%;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to top ,black ,transparent);;
 }
