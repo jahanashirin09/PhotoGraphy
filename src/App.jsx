@@ -16,8 +16,8 @@ function App() {
       <About />
       <Myworks />
       <Explore />
-      <Connect/>
       {/* <Imagetrail/> */}
+      <Connect />
     </>
   );
 }

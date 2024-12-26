@@ -17,6 +17,7 @@
   width: 100vw;
   gap: 30px;
   height: 200px;
+
 }
 
 .connect-me-text {
@@ -77,8 +78,8 @@
 .connect-information-container{
     width:100%;
     height:15rem;
-    position: absolute;
     bottom: 2rem;
+    position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -132,33 +133,23 @@ font-weight: 500;
 }
 .copywrite-container{
 width:100%;
-height: 2rem;
+height: 1px;
 position:absolute;
+padding-left: 4rem;
 bottom: 0;
+border-top: 1px solid rgba(255, 255, 255, 0.18);
+padding-top: 4px;
 /* background-color: aqua; */
 }
 .copywrite-text{
-    color: #D1BFBF;
+   color: #b8b6b6;
 font-family: "Hanken Grotesk";
 font-size: 16px;
 font-weight: 400;
-opacity: 0.5;
+line-height: normal;
 }
 @keyframes slideText {
   100% {
     left: -100%;
-  }
-}
-@keyframes slidecontainer {
-  0% {
-    transform: translateX(0%);
-  }
-
-  50% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(0%);
   }
 }

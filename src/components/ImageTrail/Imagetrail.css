@@ -5,22 +5,24 @@
 }
 .container{
     width:100%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
+
 
 }
 .imgBx{
     position: absolute;
     width:300px;
     height:400px;
-    transform: translate(-10%,-10%);
+    transform: translate(-50%,-50%);
     pointer-events: none;
+    opacity: animatio;
 }
 .imgBx img{
     position: absolute;
     top: 0;
     left: 0;
-    width: 10%;
-    height: 10%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
