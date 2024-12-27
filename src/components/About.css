@@ -3,6 +3,7 @@
   height: 100vh;
   position: relative;
   font-family: "General Sans";
+   /* z-index: 1000; */
 }
 .About-image-container {
   width: 100%;

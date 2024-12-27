@@ -22,6 +22,7 @@ const Connect = () => {
             SEND MAIL
           </button>
         </div>
+
         <div className="connect-information-container">
           <div className="connect-information-logo">
             <div className="connect-logo">
@@ -57,6 +58,7 @@ const Connect = () => {
             </div>
           </div>
         </div>
+
         <div className="copywrite-container">
           <span className="copywrite-text">
             Copyright 2024. All Rights Reserved

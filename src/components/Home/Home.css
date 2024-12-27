@@ -1,3 +1,7 @@
+#main-container{
+  position: relative;
+  z-index: 1000;
+}
 .home-body-container {
   width: 100%;
   background: url("/Homeimage/home_image.png") lightgray 50% / cover no-repeat;
