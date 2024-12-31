@@ -1,11 +1,13 @@
 import "./App.css";
-import About from "./components/About";
+import About from "./components/About/About";
 import Connect from "./components/Connect/connect";
 import Explore from "./components/Explore/Explore";
 import Home from "./components/Home/Home";
-import ImageMove from "./components/ImageTrail/ImageMove";
+// import ImageMove from "./components/ImageTrail/ImageMove";
 // import Imagetrail from "./components/ImageTrail/imagetrail";
 import Myworks from "./components/MyWork/Myworks";
+// import TrailingEffect from "./image_effect/image_effect";
+import Hero from "./components/image_effect/image_effect";
 
 
 
@@ -13,19 +15,13 @@ import Myworks from "./components/MyWork/Myworks";
 function App() {
   return (
     <>
-      <div className="div-z-index">
+     
         <Home />
         <About />
         <Myworks />
         <Explore />
-      </div>
-
-      <ImageMove />
-      <div className="div-z-index">
+        <Hero />
         <Connect />
-       
-      </div>
-      {/* <Imagetrail/> */}
     </>
   );
 }

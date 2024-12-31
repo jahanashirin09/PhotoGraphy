@@ -2,42 +2,24 @@ import './Myworks.css'
 import { useState } from 'react';
 import { cardDetails } from "./carousel-config";
 import CarouselItem from "./CarouselItem";
-import Forward from '../../assets/Forward.svg'
-import Backward from "../../assets/Forward.svg";
+import { ArrowGray } from "../../assets/ArrowGray";
+import { ArrowWhite } from "../../assets/ArrowWhite";
+
 
 const Myworks = () => {
-  const [isActive, setActive] = useState(false);
-    const [paused, setPaused] = useState(false);
-
-  const handleClickNext = () => {
-    console.log(isActive);
-    if (!paused) {
-      setPaused(true);
-      setActive(true);
-      setTimeout(() => {
-        setPaused(false);
-        setActive(false);
-      }, 2000); // Resume after 3 seconds
-    }
-  };
-
-
- const handleClickPrev = () => {
-  
- };
+   const [isForwardHovered, setIsForwardHovered] = useState(false);
+   const [isBackwardHovered, setIsBackwardHovered] = useState(false);
+  const onPrevClick = () => {
+    
+  }
+  const onNextClick = () => {
+    
+  } 
   return (
     <div id="Myworks-contanier">
       <div className="Myworks-header">My Works</div>
       <div className="Myworks-images">
-        <div
-          className={
-            paused
-              ? "carousel-track paused"
-              : isActive
-              ? "carousel-track forward-fast"
-              : "carousel-track"
-          }
-        >
+        <div className="carousel-track">
           {Object.keys(cardDetails).map((detailKey) => {
             return (
               <CarouselItem
@@ -58,15 +40,26 @@ const Myworks = () => {
           })}
         </div>
       </div>
-      <div className="Movement-button">
+      <div className="movement-container">
         <button
-          onClick={handleClickPrev}
-          className={isActive ? "backward-fast" : "backward"}
+          className="movement-button"
+          onMouseEnter={() => setIsBackwardHovered(true)}
+          onMouseLeave={() => setIsBackwardHovered(false)}
+          onClick={onPrevClick}
         >
-          <img src={Forward} alt="backward-button"></img>
+          <div className="backward-arrow">
+            {isBackwardHovered ? <ArrowWhite /> : <ArrowGray />}
+          </div>
         </button>
-        <button onClick={handleClickNext} className="forward">
-          <img src={Backward} alt="forward-button"></img>
+        <button
+          className="movement-button"
+          onMouseEnter={() => setIsForwardHovered(true)}
+          onMouseLeave={() => setIsForwardHovered(false)}
+          onClick={onNextClick}
+        >
+          <div className="forward-arrow">
+            {isForwardHovered ? <ArrowWhite /> : <ArrowGray />}
+          </div>
         </button>
       </div>
     </div>

@@ -1,25 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap");
 
 :root {
   background-color: #080808;
   color: white;
-
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "General Sans";
 }
 
-body{
+body {
   margin-inline: auto;
-    max-width: 1440px;
-    width: 100%;
-    position: relative;
-   
-
+  max-width: 1440px;
+  width: 100%;
+  position: relative;
+ overflow-x: hidden;
 
 }
-
-

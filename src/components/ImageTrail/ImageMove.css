@@ -1,10 +1,10 @@
-.path {
-  /* background: rgb(240, 196, 113); */
+/* .path {
+  background: rgb(240, 196, 113);
 
   height: 600px;
   width:100%;
-  /* background-color: transparent; */
-  /* z-index: -9; */
+  background-color: transparent;
+  z-index: -9;
   overflow: hidden;
 }
 
@@ -22,15 +22,15 @@ position: relative;
 }
 
 .items {
-  /* position:fixed; */
-  /* top:4819px ;
+  position:fixed;
+  top:4819px ;
   right: 0;
-  left: 0; */
-/* top:4819px ; */
+  left: 0;
+top:4819px ;
   width: 100%;
   height:600px;
   z-index: 2;
-  /* background-color: rgb(177, 162, 165); */
+  background-color: rgb(177, 162, 165);
   overflow: hidden;
 }
 
@@ -47,4 +47,4 @@ position: relative;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */

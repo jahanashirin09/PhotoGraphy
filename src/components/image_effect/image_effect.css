@@ -1,0 +1,86 @@
+
+.app {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+  
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+}
+
+.hero_media {
+  /* position: static; */
+  position: absolute; 
+/* position: fixed; */
+/* position: relative; */
+  /* overflow: hidden; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%) scale(0.5);
+  object-fit: contain;
+  z-index: 99;
+  pointer-events: none;
+  transition: all 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+} 
+.title-container{
+  width:30rem;
+  height:8rem;
+  /* background-color: aqua; */
+  text-align: center
+ 
+}
+.title-text{
+  color: #FFF;
+font-size: 40px;
+text-align: center;
+font-weight: 400;
+letter-spacing: 1.2px;
+ mix-blend-mode: difference;
+  z-index: 1000;
+}
+/* .hero_title {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 10;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .hero_title h1 {
+  font-size: 10rem;
+  text-align: center;
+}
+
+.ofh {
+  overflow: hidden;
+} */
+/* .hero, .app {
+  max-width: 1440px;
+  margin: 0 auto;  
+  overflow: hidden;
+}
+

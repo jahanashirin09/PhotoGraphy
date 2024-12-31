@@ -1,6 +1,6 @@
 import "./Header.css";
 import Logo from "../../assets/Logo.svg";
-import DarkMode from "../DarkMode.jsx";
+import DarkMode from "./Mode/DarkMode.jsx";
 const Header = () => {
   return (
     <div className="head-container">

@@ -1,6 +1,6 @@
-import Instagram from "../assets/Instagram.svg";
-import Twitter from "../assets/Twitter.svg";
-import Facebook from "../assets/Facebook.svg";
+import Instagram from "../../assets/Instagram.svg";
+import Twitter from "../../assets/Twitter.svg";
+import Facebook from "../../assets/Facebook.svg";
 
 import "./About.css";
 const About = () => {
