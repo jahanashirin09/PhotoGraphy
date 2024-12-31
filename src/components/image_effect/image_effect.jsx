@@ -34,7 +34,7 @@ const Hero = () => {
 
   const animateImages = (event) => {
     const image = document.createElement("img");
-    const imageSize = 30;
+    const imageSize = 20;
     // const imageRadius=10
     const countIndex = calcIndex(images.length);
     image.classList.add("hero_media");

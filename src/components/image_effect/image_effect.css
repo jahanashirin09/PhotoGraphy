@@ -28,19 +28,21 @@
 }
 
 .hero_media {
-  /* position: static; */
+width:10px;
+height: 10px;
+ 
   position: absolute; 
-/* position: fixed; */
-/* position: relative; */
-  /* overflow: hidden; */
+
   top: 50%;
   left: 50%;
   transform: translate(-40%, -50%) scale(0.5);
-  object-fit: contain;
+
   z-index: 99;
   pointer-events: none;
+  object-fit: fill;
   transition: all 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   border-radius: 2rem;
+  /* background-color: blue; */
 } 
 .title-container{
   width:30rem;
