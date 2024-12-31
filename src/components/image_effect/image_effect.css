@@ -40,6 +40,7 @@
   z-index: 99;
   pointer-events: none;
   transition: all 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  border-radius: 2rem;
 } 
 .title-container{
   width:30rem;

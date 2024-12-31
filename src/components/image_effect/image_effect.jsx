@@ -35,7 +35,7 @@ const Hero = () => {
   const animateImages = (event) => {
     const image = document.createElement("img");
     const imageSize = 30;
-    const imageRadius=10
+    // const imageRadius=10
     const countIndex = calcIndex(images.length);
     image.classList.add("hero_media");
     image.setAttribute("src", images[countIndex]);
@@ -43,7 +43,7 @@ const Hero = () => {
     image.style.height = `${imageSize}rem`;
     image.style.top = `${event.pageY - (imageSize * 10) / 2}px`;
     image.style.left = `${event.pageX - (imageSize * 10) / 2}px`;
-    image.style.borderRadius = `${imageRadius}rem`;
+    // image.style.borderRadius = `${imageRadius}rem`;
 
     heroRef.current.appendChild(image);
 
